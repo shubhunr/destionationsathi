@@ -37,6 +37,7 @@ main {
 }
 .bars {
   width: 30px;
+
 }
 .hide {
   display: none;
@@ -54,7 +55,6 @@ main {
   margin-left: 10px;
   border-radius: 5px;
   background: rgb(238, 238, 238);
-
   color: white;
 }
 
@@ -66,9 +66,12 @@ main {
 }
 .link {
   display: flex;
+  font-size: medium;
+  font-weight: 600;
   color: white;
-  gap: 10px;
-  padding: 5px 10px;
+  gap: 15px;
+  padding: 15px 10px;
+  text-decoration:none;
   border-right: 4px solid transparent;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
@@ -84,6 +87,7 @@ main {
 .link_text {
   white-space: nowrap;
   font-size: 15px;
+  
 }
 
 .menu {

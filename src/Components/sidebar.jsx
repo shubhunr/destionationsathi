@@ -117,7 +117,7 @@ const SideBar = ({ children }) => {
           }}
           className={`sidebar `}
         >
-          <div className="top_section">
+          <div className="top_section"><div className="mainlogo"></div>
             <AnimatePresence>
               {isOpen && (
                 <motion.h1
@@ -133,7 +133,7 @@ const SideBar = ({ children }) => {
             </AnimatePresence>
 
             <div className="bars">
-              <FaBars onClick={toggle} />
+              <FaBars onClick={toggle}/>
             </div>
           </div>
           <div className="search">
