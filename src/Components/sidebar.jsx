@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { FaBars, FaHome, FaLock, FaUser } from "react-icons/fa";
+import { FaBars, FaHome, FaUser } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
-import { BiAnalyse, BiSearch } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
-import { AiFillHeart, AiTwotoneFileExclamation, AiOutlinePlusCircle } from "react-icons/ai";
-import { BsCartCheck } from "react-icons/bs";
+import { BiSearch } from "react-icons/bi";
+import { LuGalleryHorizontalEnd } from "react-icons/lu";
+import { BiCog,BiUserCircle,BiLogIn } from "react-icons/bi";
+import { AiFillHeart, AiOutlinePlusCircle } from "react-icons/ai";
+import { FiPhoneCall } from "react-icons/fi";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./sidebarmenu.jsx";
@@ -27,12 +28,12 @@ const routes = [
   {
     path: "/analytics",
     name: "Contact Us",
-    icon: <BiAnalyse />,
+    icon: <FiPhoneCall />,
   },
   {
     path: "/file-manager",
     name: "Profile",
-    icon: <AiTwotoneFileExclamation />,
+    icon: <BiUserCircle />,
     subRoutes: [
       {
         path: "/settings/profile",
@@ -42,19 +43,19 @@ const routes = [
       {
         path: "/settings/2fa",
         name: "Settings",
-        icon: <FaLock />,
+        icon: <BiCog />,
       },
     ],
   },
   {
     path: "/order",
     name: "Posts",
-    icon: <BsCartCheck />,
+    icon: <LuGalleryHorizontalEnd />,
   },
   {
     path: "/settings",
-    name: "Settings",
-    icon: <BiCog />,
+    name: "Sign in/ Sign Out",
+    icon: <BiLogIn />,
     exact: true,
   },
   {
